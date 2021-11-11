@@ -65,6 +65,7 @@ export const AstroConfigSchema = z.object({
         .union([z.literal('always'), z.literal('never'), z.literal('ignore')])
         .optional()
         .default('ignore'),
+      fetchCache: z.boolean().optional().default(false),
     })
     .optional()
     .default({}),
